@@ -1,0 +1,17 @@
+GraphQL Graph Query Language
+ ruta unica
+  GET/graph?query={}
+  POST/graph?query={}
+ Eficiencia en el intercambio de datos
+
+
+
+httpServer: instancia el sservidor 
+basehttprequesthandler: se encarga de recibir la peticion del servidor
+json: permite manejar archivos json en python
+graphene: servidor para recibir solicitudes de tipo graph
+ObjectType: define como se recibiran los datos
+String, Int: restriccion de tipo de datos
+List: objerto que almacen amultiples datos
+Schema: define la estructura y operaciones de la API
+
