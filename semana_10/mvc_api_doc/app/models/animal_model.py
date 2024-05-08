@@ -1,12 +1,18 @@
 from database import db
+
+
+# Define la clase `Animal` que hereda de `db.Model`
+# `Animal` representa la tabla `animals` en la base de datos
 class Animal(db.Model):
     __tablename__ = "animals"
 
+    # Define las columnas de la tabla `animals`
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     species = db.Column(db.String(100), nullable=False)
     age = db.Column(db.Integer, nullable=False)
 
+    # Inicializa la clase `Animal`
     def __init__(self, name, species, age):
         self.name = name
         self.species = species
